@@ -1,23 +1,23 @@
-while true do
-    wait(0.)
-	local MonsterMath = math.random(1, 1000)
+game:GetService("RunService").RenderStepped:Connect(function()
+  task.wait(0.5)
+	local MonsterMath = math.random(1, 15000)
 	print(MonsterMath)
-	if MonsterMath == 55 then
+	if MonsterMath == 9000 then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Darli17/HARDCORE2026/refs/heads/main/entities/ripper"))()
 	end
-	if MonsterMath == 2 then
+	if MonsterMath == 15000 then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Darli17/HARDCORE2026/refs/heads/main/entities/A60"))()
 	end
-	if MonsterMath == 150 then
+	if MonsterMath == 1100 then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Darli17/HARDCORE2026/refs/heads/main/entities/shocker"))()
 	end
-	if MonsterMath == 45 then
+	if MonsterMath == 1666 then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Darli17/HARDCORE2026/refs/heads/main/entities/frostbite"))()
 	end
-	if MonsterMath == 65 then
+	if MonsterMath == 1278 then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Darli17/HARDCORE2026/refs/heads/main/entities/shocker"))()
 	end
 	if MonsterMath == 100 then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Darli17/HARDCORE2026/refs/heads/main/entities/rebound"))()
 	end
-end
+end)
