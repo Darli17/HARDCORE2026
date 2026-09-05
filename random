@@ -1,0 +1,22 @@
+while true do
+    wait(0.)
+	local MonsterMath = math.random(1, 2000)
+	if MonsterMath == 55 then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Darli17/HARDCORE2026/refs/heads/main/entities/ripper"))()
+	end
+	if MonsterMath == 2 then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Darli17/HARDCORE2026/refs/heads/main/entities/A60"))()
+	end
+	if MonsterMath == 150 then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Darli17/HARDCORE2026/refs/heads/main/entities/shocker"))()
+	end
+	if MonsterMath == 45 then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Darli17/HARDCORE2026/refs/heads/main/entities/frostbite"))()
+	end
+	if MonsterMath == 65 then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Darli17/HARDCORE2026/refs/heads/main/entities/shocker"))()
+	end
+	if MonsterMath == 100 then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Darli17/HARDCORE2026/refs/heads/main/entities/rebound"))()
+	end
+end
