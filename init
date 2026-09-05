@@ -1,7 +1,7 @@
 local genius = true
 
 while genius do
-	task.wait(0.)
+	task.wait(0.1)
 	if game.ReplicatedStorage.GameData.LatestRoom.Value == 1 then
 		genius = false
 	    print("Hardmode is loaded!")
