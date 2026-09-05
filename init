@@ -1,5 +1,3 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Darli17/DOORS/refs/heads/main/StaminaBar"))()
-
 local genius = true
 
 while genius do
