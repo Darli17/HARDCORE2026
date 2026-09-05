@@ -40,6 +40,7 @@ while genius do
 	    wait(3)
         game.ReplicatedStorage.Sounds.BulbZap.SoundId = "rbxassetid://4398878054"
         game.ReplicatedStorage.Sounds.BulbZap.Volume = 10
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Darli17/HARDCORE2026/refs/heads/main/stamina"))()
 	    loadstring(game:HttpGet("https://raw.githubusercontent.com/Darli17/HARDCORE2026/refs/heads/main/random"))()
     end
 end
