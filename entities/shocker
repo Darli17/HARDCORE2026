@@ -6,6 +6,7 @@
 
             Shocker.Parent = workspace
 
+						Shocker.Part.CanCollide = false
             prt.Parent = humRoot
             prt.Transparency = 1
             local weld = Instance.new("Weld")
