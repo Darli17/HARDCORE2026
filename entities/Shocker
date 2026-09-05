@@ -1,0 +1,56 @@
+			local Shocker = game:GetObjects("rbxassetid://116835646048036")[1]
+            local prt = Instance.new("Part")
+            local plr = game.Players.LocalPlayer
+            local char = plr.Character
+            local humRoot = char.HumanoidRootPart
+
+            Shocker.Parent = workspace
+
+            prt.Parent = humRoot
+            prt.Transparency = 1
+            local weld = Instance.new("Weld")
+
+            weld.Parent = prt
+            weld.Part0 = prt
+            weld.Part1 = humRoot
+
+            weld.C1 = CFrame.new(0, 0, -8)
+            Shocker["Part"].CFrame = prt.CFrame
+
+            local arg1 = game.Workspace.CurrentCamera
+
+            local isActive = true
+            local LookVector = arg1.CFrame.LookVector
+            task.delay(0.4, function()
+	            while isActive do
+		            task.wait(0.03333333333333333)
+		            local randint = math.random(0, 1)
+		            if not isMoving then
+			            if 0.4 < (LookVector - arg1.CFrame.LookVector).Magnitude then
+				            print("LOOKED TOO FAR AWAY")
+				            isMoving = true
+			            end
+			            if 0.4 < plr.Character.Humanoid.MoveDirection.Magnitude then
+				            print("KEPT MOVING")
+				            isMoving = true
+			            end
+		            end
+	            end
+            end)
+            wait(1)
+            if isMoving == true then
+	            Shocker:Destroy()
+	            prt:Destroy()
+						end
+            wait(2)
+            Shocker["Part"]["HORROR SCREAM 15"]:Play()
+            prt:Destroy()
+            char.Humanoid:TakeDamage(20)
+		local GamePlayers = game.ReplicatedStorage.GameStats
+
+		local plr = game.Players.LocalPlayer.Name
+		GamePlayers["Player_" ..plr].Total.DeathCause.Value = "Shocker"
+            Shocker["Part"].Anchored = false
+            prt:Destroy()
+            wait(2)
+            Shocker:Destroy()
