@@ -1,6 +1,7 @@
 while true do
     wait(0.)
-	local MonsterMath = math.random(1, 2000)
+	local MonsterMath = math.random(1, 1000)
+	print(MonsterMath)
 	if MonsterMath == 55 then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Darli17/HARDCORE2026/refs/heads/main/entities/ripper"))()
 	end
